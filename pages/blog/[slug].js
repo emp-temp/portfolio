@@ -1,23 +1,24 @@
-import { getPostBySlug, getAllSlugs } from 'lib/api'
-import { extractText } from 'lib/extract-text'
-import { prevNextPost } from 'lib/prev-next-post'
-import Meta from 'components/meta'
-import Container from 'components/container'
-import PostHeader from 'components/post-header'
-import PostBody from 'components/post-body'
+import { getPostBySlug, getAllSlugs } from 'lib/api';
+import { extractText } from 'lib/extract-text';
+import { prevNextPost } from 'lib/prev-next-post';
+import Meta from 'components/meta';
+import Container from 'components/container';
+import PostHeader from 'components/post-header';
+import PostBody from 'components/post-body';
 import {
   TwoColumn,
   TwoColumnMain,
   TwoColumnSidebar,
-} from 'components/two-column'
-import ConvertBody from 'components/convert-body'
-import PostCategories from 'components/post-categories'
-import Pagination from 'components/pagination'
-import Image from 'next/image'
-import { getPlaiceholder } from 'plaiceholder'
+} from 'components/two-column';
+import ConvertBody from 'components/convert-body';
+import PostCategories from 'components/post-categories';
+import Pagination from 'components/pagination';
+import Image from 'next/image';
+import { getPlaiceholder } from 'plaiceholder';
+import imgstyles from 'styles/img.module.css';
 
 // ローカルの代替アイキャッチ画像
-import { eyecatchLocal } from 'lib/constants'
+import { eyecatchLocal } from 'lib/constants';
 
 export default function Post({
   title,
@@ -51,6 +52,7 @@ export default function Post({
             width={eyecatch.width}
             height={eyecatch.height}
             sizes="(min-width: 1152px) 1152px, 100vw"
+            className={imgstyles.userdrag}
             priority
             placeholder="blur"
             blurDataURL={eyecatch.blurDataURL}
@@ -76,32 +78,32 @@ export default function Post({
         />
       </article>
     </Container>
-  )
+  );
 }
 
 export async function getStaticPaths() {
-  const allSlugs = await getAllSlugs()
+  const allSlugs = await getAllSlugs();
 
   return {
     paths: allSlugs.map(({ slug }) => `/blog/${slug}`),
     fallback: false,
-  }
+  };
 }
 
 export async function getStaticProps(context) {
-  const slug = context.params.slug
+  const slug = context.params.slug;
 
-  const post = await getPostBySlug(slug)
+  const post = await getPostBySlug(slug);
 
-  const description = extractText(post.content)
+  const description = extractText(post.content);
 
-  const eyecatch = post.eyecatch ?? eyecatchLocal
+  const eyecatch = post.eyecatch ?? eyecatchLocal;
 
-  const { base64 } = await getPlaiceholder(eyecatch.url)
-  eyecatch.blurDataURL = base64
+  const { base64 } = await getPlaiceholder(eyecatch.url);
+  eyecatch.blurDataURL = base64;
 
-  const allSlugs = await getAllSlugs()
-  const [prevPost, nextPost] = prevNextPost(allSlugs, slug)
+  const allSlugs = await getAllSlugs();
+  const [prevPost, nextPost] = prevNextPost(allSlugs, slug);
 
   return {
     props: {
@@ -114,5 +116,5 @@ export async function getStaticProps(context) {
       prevPost: prevPost,
       nextPost: nextPost,
     },
-  }
+  };
 }

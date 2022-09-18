@@ -1,6 +1,7 @@
-import styles from 'styles/posts.module.css'
-import Link from 'next/link'
-import Image from 'next/image'
+import styles from 'styles/posts.module.css';
+import imgstyles from 'styles/img.module.css';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Posts({ posts }) {
   return (
@@ -16,6 +17,7 @@ export default function Posts({ posts }) {
                   layout="fill"
                   objectFit="cover"
                   sizes="(min-width: 1152px) 576px, 50vw"
+                  className={imgstyles.userdrag}
                   placeholder="blur"
                   blurDataURL={eyecatch.blurDataURL}
                 />
@@ -26,5 +28,5 @@ export default function Posts({ posts }) {
         </article>
       ))}
     </div>
-  )
+  );
 }

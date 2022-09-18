@@ -2,22 +2,15 @@ import Meta from 'components/meta';
 import Container from 'components/container';
 import Hero from 'components/hero';
 
-import Image from 'next/image'
+import eyecatch from 'images/about.jpg';
+import imgstyles from 'styles/img.module.css';
+import Image from 'next/image';
 
-// import temple from 'images/temple.jpg'
-import eyecatch from 'images/about.jpg'
-import imgstyles from 'styles/img.module.css'
-
-
-export default function About() {
+export default function Works() {
   return (
     <Container>
-      <Meta
-        pageTitle="コンタクト"
-        pageDesc="My Contact"
-      />
-
-      <Hero title="Contact" subtitle="My Contact" />
+      <Meta />
+      <Hero title="Works" subtitle="This is my main achievenment" />
 
       <figure>
         <Image
@@ -30,7 +23,6 @@ export default function About() {
           placeholder="blur"
         />
       </figure>
-
     </Container>
   );
 }

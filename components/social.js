@@ -1,33 +1,35 @@
-import styles from 'styles/social.module.css'
+import styles from 'styles/social.module.css';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+
 import {
-  faTwitter,
-  faFacebookF,
-  faGithub,
-} from '@fortawesome/free-brands-svg-icons'
+  TbBrandGithub,
+  TbBrandTwitter,
+  TbBrandInstagram,
+} from 'react-icons/tb';
 
 export default function Social({ iconSize = 'initial' }) {
   return (
     <ul className={styles.list} style={{ '--icon-size': iconSize }}>
       <li>
-        <a href="https://twitter.com/">
-          <FontAwesomeIcon icon={faTwitter} />
+        <a href="https://twitter.com/emptemp0000">
+          <TbBrandTwitter />
           <span className="sr-only">Twitter</span>
         </a>
       </li>
       <li>
-        <a href="https://www.facebook.com/">
-          <FontAwesomeIcon icon={faFacebookF} />
-          <span className="sr-only">Facebook</span>
+        <a href="https://www.instagram.com/emp_temp/">
+          <TbBrandInstagram />
+          <span className="sr-only">Instagram</span>
         </a>
       </li>
       <li>
-        <a href="https://github.com/">
-          <FontAwesomeIcon icon={faGithub} />
+        <a href="https://github.com/emp-temp">
+          <TbBrandGithub />
           <span className="sr-only">GitHub</span>
         </a>
       </li>
     </ul>
-  )
+  );
 }

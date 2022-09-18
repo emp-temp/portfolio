@@ -1,0 +1,17 @@
+.bio {
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+.background {
+  display: flex;
+}
+
+.background div {
+  padding-right: 10px;
+}
+
+.background div p {
+  font-weight: bold;
+}
+

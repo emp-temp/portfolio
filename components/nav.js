@@ -1,17 +1,17 @@
-import { useState } from 'react'
-import Link from 'next/link'
-import styles from 'styles/nav.module.css'
+import { useState } from 'react';
+import Link from 'next/link';
+import styles from 'styles/nav.module.css';
 
 export default function Nav() {
-  const [navIsOpen, setNavIsOpen] = useState(false)
+  const [navIsOpen, setNavIsOpen] = useState(false);
 
   const toggleNav = () => {
-    setNavIsOpen((prev) => !prev)
-  }
+    setNavIsOpen((prev) => !prev);
+  };
 
   const closeNav = () => {
-    setNavIsOpen(false)
-  }
+    setNavIsOpen(false);
+  };
 
   return (
     <nav className={navIsOpen ? styles.open : styles.close}>
@@ -34,21 +34,30 @@ export default function Nav() {
 
       <ul className={styles.list}>
         <li>
-          <Link href="/">
-            <a onClick={closeNav}>Home</a>
+          <Link href="/works">
+            <a onClick={closeNav}>
+              <span>Works</span>
+              <span>私の作品</span>
+            </a>
           </Link>
         </li>
         <li>
           <Link href="/about">
-            <a onClick={closeNav}>About</a>
+            <a onClick={closeNav}>
+              <span>Contact</span>
+              <span>私への連絡</span>
+            </a>
           </Link>
         </li>
         <li>
           <Link href="/blog">
-            <a onClick={closeNav}>Blog</a>
+            <a onClick={closeNav}>
+              <span>Blog</span>
+              <span>私の日常</span>
+            </a>
           </Link>
         </li>
       </ul>
     </nav>
-  )
+  );
 }
