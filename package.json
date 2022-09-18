@@ -2,14 +2,18 @@
   "name": "blog",
   "private": true,
   "description": "「作って学ぶ Next.js/React Webサイト構築」のChapter 10で完成させるプロジェクトデータです",
-  "homepage": "https://github.com/ebisucom/next-react-website",
+  "homepage": "https://emp-temp.github.io/emp-temp.github.io",
   "author": "エビスコム - EBISUCOM (https://ebisu.com/)",
   "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "rm": "rm -rf docs",
+    "mv": "mv build docs",
+    "git": "git add . && git commit && git push origin main",
+    "deploy": "npm run rm && npm run build && npm run mv && npm run git"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
@@ -27,7 +31,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
-    "sharp": "^0.30.7"
+    "sharp": "^0.30.7",
+    "styled-jsx": "^5.0.7"
   },
   "devDependencies": {
     "eslint": "8.18.0",
