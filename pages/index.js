@@ -20,15 +20,13 @@ export default function Home() {
     <Container>
       <Meta />
       <Hero title="TEMP" subtitle="TEMP is Motivated Developer." imageOn />
-      {/* たくやさんみたいなことを書く */}
-      {/* あとはあっくんみたいにできることを書く */}
       <TwoColumn>
         <TwoColumnMain>
           <PostBody>
             <h2 className={styles.title}><u>Work</u></h2>
             <p>
               TEMPは現在四国のとある高専に通っているエンジニアであり、
-              データサイエンス、Webのバックエンド、フロントエンド開発
+              データサイエンス、Webのバックエンド、フロントエンド
               などの開発を通し、自身のアイデアやサービスで世の中を
               少しでも楽しく便利にしようと、日々精進しています。
               現在はロボ研に所属しています。
@@ -48,7 +46,7 @@ export default function Home() {
             </div>
             <div className={styles.background}>
               <div>
-                <p>2004</p>
+                <p>2022</p>
               </div>
               <p>While enjoying college life as a student, I devote myself to developing my own services and projects.</p>
             </div>
