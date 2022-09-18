@@ -8,6 +8,7 @@ import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from 'components/two-colum
 import PostBody from 'components/post-body'
 import Accordion from 'components/accordion'
 import Contact from 'components/contact'
+import Skills from 'components/skills'
 
 import styles from 'styles/home.module.css'
 
@@ -24,7 +25,7 @@ export default function Home() {
       <TwoColumn>
         <TwoColumnMain>
           <PostBody>
-            <h2><u>Work</u></h2>
+            <h2 className={styles.title}><u>Work</u></h2>
             <p>
               TEMPは現在四国のとある高専に通っているエンジニアであり、
               データサイエンス、Webのバックエンド、フロントエンド開発
@@ -32,7 +33,7 @@ export default function Home() {
               少しでも楽しく便利にしようと、日々精進しています。
               現在はロボ研に所属しています。
             </p>
-            <h2><u>Background</u></h2>
+            <h2 className={styles.title}><u>Background</u></h2>
             <div className={styles.background}>
               <div>
                 <p>2004</p>
@@ -51,13 +52,16 @@ export default function Home() {
               </div>
               <p>While enjoying college life as a student, I devote myself to developing my own services and projects.</p>
             </div>
-            <h2><u>Hobby</u></h2>
+            <h2 className={styles.title}><u>Hobby</u></h2>
             <p>Service development, Music, Playing Guitar, Read, Working</p>
+            <h2 className={styles.title}><u>Skills</u></h2>
+            <Skills />
 
-            <h2><u>FAQ</u></h2>
+            <h2 className={styles.title}><u>FAQ</u></h2>
+
             <Accordion heading="学校での生活について">
               <p>
-                情報系の学部に所属しています。学校生活はコロナなどの関係で行事などもこれまでほとんどなく大変ですが、日進月歩で1日1日大切にし充実した1日を過ごせられていると感じています。
+                情報系の学部に所属しています。学校生活はコロナなどの関係で行事などもこれまでほとんどなく大変ですが、日進月歩で1日1日大切にし充実した1日を過ごすことができています。
               </p>
             </Accordion>
             <Accordion heading="開発しているサービスについて">
