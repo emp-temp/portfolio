@@ -25,11 +25,7 @@ export default function Home() {
           <PostBody>
             <h2 className={styles.title}><u>Work</u></h2>
             <p>
-              TEMPは現在四国のとある高専に通っているエンジニアであり、
-              データサイエンス、Webのバックエンド、フロントエンド
-              などの開発を通し、自身のアイデアやサービスで世の中を
-              少しでも楽しく便利にしようと、日々精進しています。
-              現在はロボ研に所属しています。
+              TEMPは現在四国のとある高専に通っているエンジニアであり、データサイエンス、Webのバックエンド、フロントエンドなどの開発を通し、自身のアイデアやサービスで世の中を少しでも楽しく便利にしようと、日々精進しています。現在はロボ研に所属しています。
             </p>
             <h2 className={styles.title}><u>Background</u></h2>
             <div className={styles.background}>
