@@ -4,7 +4,7 @@ import Hero from 'components/hero';
 
 import Image from 'next/image'
 
-import temple from 'images/temple.jpg'
+import temple from 'images/temple.jpg';
 // import eyecatch from 'images/about.jpg'
 import imgstyles from 'styles/img.module.css'
 
@@ -21,7 +21,7 @@ export default function About() {
 
       <figure>
         <Image
-          src={template}
+          src={temple}
           alt=""
           layout="responsive"
           sizes="(min-width: 1152px) 1152px, 100vw"
