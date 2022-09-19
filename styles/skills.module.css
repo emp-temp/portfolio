@@ -20,17 +20,19 @@
 .box2 {
   padding: 0.5em 1em;
   font-weight: bold;
-  color: #000000;
-  background: #FFF;
-  border: solid 3px #000;
+  color: #FFFFFF;
+  background: #000;
+  border: solid 3px #FFF;
   border-radius: 10px;
 }
 
 .box2 h3 {
   padding-bottom: 10px;
+  text-decoration: underline dotted;
 }
 
 .box2 p {
   margin: 0;
   padding: 0;
 }
+
