@@ -25,11 +25,7 @@ export default function Home() {
           <PostBody>
             <h2 className={styles.title}><u>Work</u></h2>
             <p>
-              TEMPは現在四国のとある高専に通っているエンジニアであり、
-              データサイエンス、Webのバックエンド、フロントエンド開発
-              などの開発を通し、自身のアイデアやサービスで世の中を
-              少しでも楽しく便利にしようと、日々精進しています。
-              現在はロボ研に所属しています。
+              TEMPは現在四国のとある高専に通っているエンジニアであり、データサイエンス、Webのバックエンド、フロントエンドなどの開発を通し、自身のアイデアやサービスで世の中を少しでも楽しく便利にしようと、日々精進しています。現在はロボ研に所属しています。
             </p>
             <h2 className={styles.title}><u>Background</u></h2>
             <div className={styles.background}>
@@ -46,7 +42,7 @@ export default function Home() {
             </div>
             <div className={styles.background}>
               <div>
-                <p>2004</p>
+                <p>2022</p>
               </div>
               <p>While enjoying college life as a student, I devote myself to developing my own services and projects.</p>
             </div>
@@ -59,17 +55,17 @@ export default function Home() {
 
             <Accordion heading="学校での生活について">
               <p>
-                情報系の学部に所属しています。学校生活はコロナなどの関係で行事などもこれまでほとんどなく大変ですが、日進月歩で1日1日大切にし充実した1日を過ごすことができています。
+                情報系の学部に所属しています。学校生活はコロナなどの関係で行事などもこれまでほとんどなく大変ですが、日進月歩で1日1日大切にし充実した1日を過ごしています。
               </p>
             </Accordion>
             <Accordion heading="開発しているサービスについて">
               <p>
-                現在学校関連のツールをグループを作り作成しております。具体的には寮の管理ツールや学科のWebサイトを作成させていただいている途中です。個人ではまだ別で自分の考えたアイデアを実現するために開発を行っております。
+                現在学校関連のツールをグループを作り作成しています。具体的には寮の管理ツールや学科のWebサイトを作成させていただいている途中です。個人ではまだ別で自分の考えたアイデアを実現するために開発を行っています。
               </p>
             </Accordion>
             <Accordion heading="これまでの実務経験について">
               <p>
-                とある会社でデータサイエンティストとして、データの加工、CNNでOCRなどの開発を行っていました。軽くVueなどでも開発のお手伝いをさせていただいていました。
+                とある会社でデータサイエンティストとして、データの加工、CNNでOCRなどの開発を行っていました。軽くVueなどでも開発のお手伝いをいたしました。
               </p>
             </Accordion>
           </PostBody>
