@@ -10,7 +10,7 @@ export default function Logo({ iconOn = false, boxOn = false }) {
       <a className={boxOn ? styles.box : styles.basic}>
         {iconOn && <span className={styles.icon}><FontAwesomeIcon icon={faBone} /></span>}
         EMP-TEMP
-        {iconOn && <span className={styles.icon}><FontAwesomeIcon icon={faBone} /></span>}
+        {iconOn && <span className={styles.icon1}><FontAwesomeIcon icon={faBone} /></span>}
       </a>
     </Link>
   );

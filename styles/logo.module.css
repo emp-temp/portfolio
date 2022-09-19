@@ -16,11 +16,23 @@
 .icon {
   padding: 10px;
   display: inline-block;
-  transform: rotate(-45deg);
-  transition: transform 0.4s;
+  transform: rotate(-180deg);
+  transition: transform 1s;
+  position: relative;
+}
+
+.icon1 {
+  padding: 10px;
+  display: inline-block;
+  transform: rotate(180deg);
+  transition: transform 1s;
   position: relative;
 }
 
 .box:hover .icon {
+  transform: rotate(0deg);
+}
+
+.box:hover .icon1 {
   transform: rotate(0deg);
 }
