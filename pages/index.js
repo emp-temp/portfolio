@@ -12,7 +12,7 @@ import Skills from 'components/skills'
 
 import styles from 'styles/home.module.css'
 
-// ローカルの代替アイキャッチ画像
+// ローカルの代kアイキャッチ画像
 import { eyecatchLocal } from 'lib/constants';
 
 export default function Home() {
@@ -20,8 +20,6 @@ export default function Home() {
     <Container>
       <Meta />
       <Hero title="TEMP" subtitle="TEMP is Motivated Developer." imageOn />
-      {/* たくやさんみたいなことを書く */}
-      {/* あとはあっくんみたいにできることを書く */}
       <TwoColumn>
         <TwoColumnMain>
           <PostBody>

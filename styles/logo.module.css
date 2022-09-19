@@ -12,3 +12,15 @@
   color: var(--white);
   font-size: var(--small-heading2);
 }
+
+.icon {
+  padding: 10px;
+  display: inline-block;
+  transform: rotate(-45deg);
+  transition: transform 0.4s;
+  position: relative;
+}
+
+.box:hover .icon {
+  transform: rotate(0deg);
+}
