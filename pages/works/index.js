@@ -10,7 +10,7 @@ export default function Works() {
   return (
     <Container>
       <Meta />
-      <Hero title="Works" subtitle="This is my main achievenment" />
+      <Hero title="Works" subtitle="This is my main achievement" />
 
       <figure>
         <Image
